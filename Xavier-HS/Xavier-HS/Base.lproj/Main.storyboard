@@ -31,7 +31,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCH-Kz-zZ2" userLabel="Letter-Day Box">
-                                                <rect key="frame" x="268" y="43" width="99.000000000000028" height="99"/>
+                                                <rect key="frame" x="268" y="43" width="99" height="63"/>
                                                 <state key="normal" backgroundImage="G-Box">
                                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -56,7 +56,7 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="G" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tX5-m9-OSG" userLabel="G">
-                                                <rect key="frame" x="301" y="84" width="53" height="36"/>
+                                                <rect key="frame" x="301" y="84" width="53" height="0.0"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="53" id="7jd-lJ-BaJ"/>
@@ -66,7 +66,7 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Cr-My-aTw" userLabel="Warning Box">
-                                                <rect key="frame" x="13" y="177" width="349" height="85"/>
+                                                <rect key="frame" x="13" y="141" width="349" height="18"/>
                                                 <state key="normal" backgroundImage="Warning Box"/>
                                             </button>
                                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Warning!                                               " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="V1M-yA-9iI" userLabel="Warning!">
@@ -79,7 +79,7 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="You are currently on the call down list" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IpA-df-bDN" userLabel="Warning Text">
-                                                <rect key="frame" x="27" y="216" width="410" height="24"/>
+                                                <rect key="frame" x="27" y="180" width="410" height="24"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>

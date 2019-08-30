@@ -3,30 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A794D2582318CE0600426841 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7006C332317211A0092C456 /* Main.storyboard */; };
-		A794D2592318CE0C00426841 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7006C382317211B0092C456 /* LaunchScreen.storyboard */; };
-		A794D25A2318CE1900426841 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7006C362317211B0092C456 /* Assets.xcassets */; };
-		A7A877E723189E770083660C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7A877E623189E770083660C /* Default-568h@2x.png */; };
+		A7F231F72319C7E5003533AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F231F62319C7E5003533AB /* AppDelegate.swift */; };
+		A7F231F92319C7E5003533AB /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F231F82319C7E5003533AB /* FirstViewController.swift */; };
+		A7F231FB2319C7E5003533AB /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F231FA2319C7E5003533AB /* SecondViewController.swift */; };
+		A7F231FE2319C7E5003533AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F231FC2319C7E5003533AB /* Main.storyboard */; };
+		A7F232002319C7E6003533AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7F231FF2319C7E6003533AB /* Assets.xcassets */; };
+		A7F232032319C7E6003533AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F232012319C7E6003533AB /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A7006C2A2317211A0092C456 /* Xavier HS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Xavier HS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7006C2D2317211A0092C456 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A7006C2F2317211A0092C456 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; usesTabs = 0; };
-		A7006C312317211A0092C456 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		A7006C342317211A0092C456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A7006C362317211B0092C456 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A7006C392317211B0092C456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A7006C3B2317211B0092C456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A7A877E623189E770083660C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A7F231F32319C7E5003533AB /* Xavier-HS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Xavier-HS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7F231F62319C7E5003533AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A7F231F82319C7E5003533AB /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		A7F231FA2319C7E5003533AB /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		A7F231FD2319C7E5003533AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A7F231FF2319C7E6003533AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7F232022319C7E6003533AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A7F232042319C7E6003533AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A7006C272317211A0092C456 /* Frameworks */ = {
+		A7F231F02319C7E5003533AB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,73 +37,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A7006C212317211A0092C456 = {
+		A7F231EA2319C7E5003533AB = {
 			isa = PBXGroup;
 			children = (
-				A7A877E623189E770083660C /* Default-568h@2x.png */,
-				A7006C2C2317211A0092C456 /* Xavier HS */,
-				A7006C2B2317211A0092C456 /* Products */,
+				A7F231F52319C7E5003533AB /* Xavier-HS */,
+				A7F231F42319C7E5003533AB /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A7006C2B2317211A0092C456 /* Products */ = {
+		A7F231F42319C7E5003533AB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A7006C2A2317211A0092C456 /* Xavier HS.app */,
+				A7F231F32319C7E5003533AB /* Xavier-HS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A7006C2C2317211A0092C456 /* Xavier HS */ = {
+		A7F231F52319C7E5003533AB /* Xavier-HS */ = {
 			isa = PBXGroup;
 			children = (
-				A7006C2D2317211A0092C456 /* AppDelegate.swift */,
-				A7006C2F2317211A0092C456 /* FirstViewController.swift */,
-				A7006C312317211A0092C456 /* SecondViewController.swift */,
-				A7006C332317211A0092C456 /* Main.storyboard */,
-				A7006C362317211B0092C456 /* Assets.xcassets */,
-				A7006C382317211B0092C456 /* LaunchScreen.storyboard */,
-				A7006C3B2317211B0092C456 /* Info.plist */,
+				A7F231F62319C7E5003533AB /* AppDelegate.swift */,
+				A7F231F82319C7E5003533AB /* FirstViewController.swift */,
+				A7F231FA2319C7E5003533AB /* SecondViewController.swift */,
+				A7F231FC2319C7E5003533AB /* Main.storyboard */,
+				A7F231FF2319C7E6003533AB /* Assets.xcassets */,
+				A7F232012319C7E6003533AB /* LaunchScreen.storyboard */,
+				A7F232042319C7E6003533AB /* Info.plist */,
 			);
-			path = "Xavier HS";
+			path = "Xavier-HS";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A7006C292317211A0092C456 /* Xavier HS */ = {
+		A7F231F22319C7E5003533AB /* Xavier-HS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A7006C3E2317211B0092C456 /* Build configuration list for PBXNativeTarget "Xavier HS" */;
+			buildConfigurationList = A7F232072319C7E6003533AB /* Build configuration list for PBXNativeTarget "Xavier-HS" */;
 			buildPhases = (
-				A7006C262317211A0092C456 /* Sources */,
-				A7006C272317211A0092C456 /* Frameworks */,
-				A7006C282317211A0092C456 /* Resources */,
+				A7F231EF2319C7E5003533AB /* Sources */,
+				A7F231F02319C7E5003533AB /* Frameworks */,
+				A7F231F12319C7E5003533AB /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Xavier HS";
-			productName = "Xavier HS";
-			productReference = A7006C2A2317211A0092C456 /* Xavier HS.app */;
+			name = "Xavier-HS";
+			productName = "Xavier-HS";
+			productReference = A7F231F32319C7E5003533AB /* Xavier-HS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A7006C222317211A0092C456 /* Project object */ = {
+		A7F231EB2319C7E5003533AB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = Cornette;
 				TargetAttributes = {
-					A7006C292317211A0092C456 = {
+					A7F231F22319C7E5003533AB = {
 						CreatedOnToolsVersion = 10.3;
 					};
 				};
 			};
-			buildConfigurationList = A7006C252317211A0092C456 /* Build configuration list for PBXProject "Xavier HS" */;
+			buildConfigurationList = A7F231EE2319C7E5003533AB /* Build configuration list for PBXProject "Xavier-HS" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,53 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = A7006C212317211A0092C456;
-			productRefGroup = A7006C2B2317211A0092C456 /* Products */;
+			mainGroup = A7F231EA2319C7E5003533AB;
+			productRefGroup = A7F231F42319C7E5003533AB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A7006C292317211A0092C456 /* Xavier HS */,
+				A7F231F22319C7E5003533AB /* Xavier-HS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A7006C282317211A0092C456 /* Resources */ = {
+		A7F231F12319C7E5003533AB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A794D25A2318CE1900426841 /* Assets.xcassets in Resources */,
-				A794D2592318CE0C00426841 /* LaunchScreen.storyboard in Resources */,
-				A794D2582318CE0600426841 /* Main.storyboard in Resources */,
-				A7A877E723189E770083660C /* Default-568h@2x.png in Resources */,
+				A7F232032319C7E6003533AB /* LaunchScreen.storyboard in Resources */,
+				A7F232002319C7E6003533AB /* Assets.xcassets in Resources */,
+				A7F231FE2319C7E5003533AB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A7006C262317211A0092C456 /* Sources */ = {
+		A7F231EF2319C7E5003533AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7F231FB2319C7E5003533AB /* SecondViewController.swift in Sources */,
+				A7F231F72319C7E5003533AB /* AppDelegate.swift in Sources */,
+				A7F231F92319C7E5003533AB /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A7006C332317211A0092C456 /* Main.storyboard */ = {
+		A7F231FC2319C7E5003533AB /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A7006C342317211A0092C456 /* Base */,
+				A7F231FD2319C7E5003533AB /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		A7006C382317211B0092C456 /* LaunchScreen.storyboard */ = {
+		A7F232012319C7E6003533AB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A7006C392317211B0092C456 /* Base */,
+				A7F232022319C7E6003533AB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -164,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A7006C3C2317211B0092C456 /* Debug */ = {
+		A7F232052319C7E6003533AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -225,7 +227,7 @@
 			};
 			name = Debug;
 		};
-		A7006C3D2317211B0092C456 /* Release */ = {
+		A7F232062319C7E6003533AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -280,13 +282,13 @@
 			};
 			name = Release;
 		};
-		A7006C3F2317211B0092C456 /* Debug */ = {
+		A7F232082319C7E6003533AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SVAHMLZR95;
-				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				INFOPLIST_FILE = "Xavier-HS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,13 +300,13 @@
 			};
 			name = Debug;
 		};
-		A7006C402317211B0092C456 /* Release */ = {
+		A7F232092319C7E6003533AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SVAHMLZR95;
-				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				INFOPLIST_FILE = "Xavier-HS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,25 +321,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A7006C252317211A0092C456 /* Build configuration list for PBXProject "Xavier HS" */ = {
+		A7F231EE2319C7E5003533AB /* Build configuration list for PBXProject "Xavier-HS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A7006C3C2317211B0092C456 /* Debug */,
-				A7006C3D2317211B0092C456 /* Release */,
+				A7F232052319C7E6003533AB /* Debug */,
+				A7F232062319C7E6003533AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A7006C3E2317211B0092C456 /* Build configuration list for PBXNativeTarget "Xavier HS" */ = {
+		A7F232072319C7E6003533AB /* Build configuration list for PBXNativeTarget "Xavier-HS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A7006C3F2317211B0092C456 /* Debug */,
-				A7006C402317211B0092C456 /* Release */,
+				A7F232082319C7E6003533AB /* Debug */,
+				A7F232092319C7E6003533AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A7006C222317211A0092C456 /* Project object */;
+	rootObject = A7F231EB2319C7E5003533AB /* Project object */;
 }
