@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1341C5C4239BFE6E00744631 /* Pods_Xavier_HS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20BE58202709D9A2D360700 /* Pods_Xavier_HS.framework */; };
+		1341C5C8239C051000744631 /* dateFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1341C5C7239C051000744631 /* dateFinder.swift */; };
 		A7F231F72319C7E5003533AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F231F62319C7E5003533AB /* AppDelegate.swift */; };
 		A7F231F92319C7E5003533AB /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F231F82319C7E5003533AB /* FirstViewController.swift */; };
 		A7F231FB2319C7E5003533AB /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F231FA2319C7E5003533AB /* SecondViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1341C5C7239C051000744631 /* dateFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dateFinder.swift; sourceTree = "<group>"; };
+		96F6195BEBF453796A5DF480 /* Pods-Xavier-HS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xavier-HS.release.xcconfig"; path = "Target Support Files/Pods-Xavier-HS/Pods-Xavier-HS.release.xcconfig"; sourceTree = "<group>"; };
 		A7F231F32319C7E5003533AB /* Xavier-HS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Xavier-HS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7F231F62319C7E5003533AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7F231F82319C7E5003533AB /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		A7F231FF2319C7E6003533AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7F232022319C7E6003533AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7F232042319C7E6003533AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E375F055236A18E2C122B7F5 /* Pods-Xavier-HS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xavier-HS.debug.xcconfig"; path = "Target Support Files/Pods-Xavier-HS/Pods-Xavier-HS.debug.xcconfig"; sourceTree = "<group>"; };
+		F20BE58202709D9A2D360700 /* Pods_Xavier_HS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Xavier_HS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1341C5C4239BFE6E00744631 /* Pods_Xavier_HS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041F432FCECA170DDBFB4813 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F20BE58202709D9A2D360700 /* Pods_Xavier_HS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A7F231EA2319C7E5003533AB = {
 			isa = PBXGroup;
 			children = (
 				A7F231F52319C7E5003533AB /* Xavier-HS */,
 				A7F231F42319C7E5003533AB /* Products */,
+				DE1891AC5D274AB17C42473D /* Pods */,
+				041F432FCECA170DDBFB4813 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +80,18 @@
 				A7F231FF2319C7E6003533AB /* Assets.xcassets */,
 				A7F232012319C7E6003533AB /* LaunchScreen.storyboard */,
 				A7F232042319C7E6003533AB /* Info.plist */,
+				1341C5C7239C051000744631 /* dateFinder.swift */,
 			);
 			path = "Xavier-HS";
+			sourceTree = "<group>";
+		};
+		DE1891AC5D274AB17C42473D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E375F055236A18E2C122B7F5 /* Pods-Xavier-HS.debug.xcconfig */,
+				96F6195BEBF453796A5DF480 /* Pods-Xavier-HS.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7F232072319C7E6003533AB /* Build configuration list for PBXNativeTarget "Xavier-HS" */;
 			buildPhases = (
+				9022928D5A5FA7400E22B2C4 /* [CP] Check Pods Manifest.lock */,
 				A7F231EF2319C7E5003533AB /* Sources */,
 				A7F231F02319C7E5003533AB /* Frameworks */,
 				A7F231F12319C7E5003533AB /* Resources */,
+				D3B1CC7784B4DB97E5CCE75C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +162,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9022928D5A5FA7400E22B2C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Xavier-HS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3B1CC7784B4DB97E5CCE75C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Xavier-HS/Pods-Xavier-HS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Xavier-HS/Pods-Xavier-HS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Xavier-HS/Pods-Xavier-HS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A7F231EF2319C7E5003533AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A7F231FB2319C7E5003533AB /* SecondViewController.swift in Sources */,
+				1341C5C8239C051000744631 /* dateFinder.swift in Sources */,
 				A7F231F72319C7E5003533AB /* AppDelegate.swift in Sources */,
 				A7F231F92319C7E5003533AB /* FirstViewController.swift in Sources */,
 			);
@@ -284,16 +356,18 @@
 		};
 		A7F232082319C7E6003533AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E375F055236A18E2C122B7F5 /* Pods-Xavier-HS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SVAHMLZR95;
+				DEVELOPMENT_TEAM = B9K3VJMSNM;
 				INFOPLIST_FILE = "Xavier-HS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.EricLi.Xavier-HS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ThomasLedwith.Xavier-HS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -302,16 +376,18 @@
 		};
 		A7F232092319C7E6003533AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96F6195BEBF453796A5DF480 /* Pods-Xavier-HS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SVAHMLZR95;
+				DEVELOPMENT_TEAM = B9K3VJMSNM;
 				INFOPLIST_FILE = "Xavier-HS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.EricLi.Xavier-HS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ThomasLedwith.Xavier-HS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

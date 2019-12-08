@@ -1,0 +1,6 @@
+framework module Pods_Xavier_HS {
+  umbrella header "Pods-Xavier-HS-umbrella.h"
+
+  export *
+  module * { export * }
+}
