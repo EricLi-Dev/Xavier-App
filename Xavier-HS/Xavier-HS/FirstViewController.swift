@@ -8,113 +8,98 @@
 
 import UIKit
 import WebKit
+import SwiftSoup
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController, WKNavigationDelegate {
     
     @IBOutlet weak var WeekDay: UILabel!
     @IBOutlet weak var Month: UILabel!
     @IBOutlet weak var Day: UILabel!
     @IBOutlet weak var Year: UILabel!
     
+    @IBOutlet weak var warnBox: UIButton!
+    @IBOutlet weak var warnTxt2: UITextView!
+    @IBOutlet weak var warnTxt1: UITextView!
     @IBOutlet weak var Lunch: UITextView!
+    @IBOutlet weak var Event1: UITextView!
+    @IBOutlet weak var Event2: UITextView!
+    @IBOutlet weak var Event3: UITextView!
+    let dateFinderC = dateFinder()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    //TODO: Move Web Scraping to seperate class file.
+    //WEB SCRAPING_______________________________
     
-        let date = Date()
-        let calendar = Calendar.current
-        
-//Getting and Printing the WeekDay Value
-        let weekday = calendar.component(.weekday, from: date)
-
-        var weekDay: String
-        
-        if (weekday == 1)
-        {
-            weekDay = "Sunday,"
+    let webView = WKWebView()
+    var htmlStr:String = ""
+    
+    func parseAndExecute() { webView.evaluateJavaScript("document.documentElement.outerHTML.toString()", completionHandler: { (html: Any?, error: Error?) in
+        do {
+            
+            let doc: Document = try SwiftSoup.parse(html as! String)
+            let elements = try doc.getAllElements()
+            var firstEvent = true
+            var eventNum = 0
+            for element in elements {
+                switch try element.className() {
+                case "date-container" :
+                    if firstEvent == true {
+                        print("Date: \(try element.text())")
+                        let parent = element.parent()
+                        let midBox = parent!.parent()
+                        
+                        let title = try midBox!.select("h3.title").text()
+                        print(title)
+                        self.Event1.text = "\(title) - \(try element.text())"
+                        firstEvent = false
+                    } else {
+                        print("Date: \(try element.text())")
+                        let midBox = element.parent()
+                        let title = try midBox!.select("h3.title").text()
+                        print(title)
+                        if eventNum == 0 {
+                            self.Event2.text = "\(title) - \(try element.text())"
+                            eventNum += 1
+                        } else {
+                            self.Event3.text = "\(title) - \(try element.text())"
+                        }
+                    }
+                    
+                default:
+                    let _ = 1
+                }
+            }
+        } catch Exception.Error(let type, let message) {
+            print(type)
+            print("Message: \(message)")
+        } catch {
+            print("error")
         }
-          else if (weekday == 2)
-        {
-            weekDay = "Monday,"
-        } else if (weekday == 3)
-        {
-            weekDay = "Tuesday,"
-        } else if (weekday == 4)
-        {
-            weekDay = "Wednesday,"
-        } else if (weekday == 5)
-        {
-            weekDay = "Thursday,"
-        } else if (weekday == 6)
-        {
-            weekDay = "Friday,"
-        } else
-        {
-            weekDay = "Saturday,"
-        }
-        
-        WeekDay.text = weekDay
-
-//Getting and Printing the Month Value
-        let month = calendar.component(.month, from: date)
-        
-        var monthWord: String
-        
-        if (month == 1)
-        {
-            monthWord = "January,"
-        } else if (month == 2)
-        {
-            monthWord = "February,"
-        }else if (month == 3)
-        {
-            monthWord = "March,"
-        }else if (month == 4)
-        {
-            monthWord = "April,"
-        }else if (month == 5)
-        {
-            monthWord = "May,"
-        }else if (month == 6)
-        {
-            monthWord = "June,"
-        }else if (month == 7)
-        {
-            monthWord = "July,"
-        }else if (month == 8)
-        {
-            monthWord = "August,"
-        }else if (month == 9)
-        {
-            monthWord = "September,"
-        }else if (month == 10)
-        {
-            monthWord = "October,"
-        }else if (month == 11)
-        {
-            monthWord = "November,"
-        }else
-        {
-            monthWord = "December,"
-        }
-        
-        Month.text = monthWord
-        
-//Getting and Printing the Day and Year Values
-        let day = calendar.component(.day, from: date)
-        let year = calendar.component(.year, from: date)
-        
-        Day.text = String(day) + "," + " " + String(year)
-
-//Web Scraping For Lunch UITextView
-//        let webView = WKWebView()
-//
-//        let url = URL(string: "")!
-//        let request = URLRequest(url: url)
-//        
+    })
     }
 
+    
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!)
+    {
+            self.parseAndExecute()
+    }
+    //---------------------------
+    override func viewDidLoad() {
+        super.viewDidLoad()
+//-------WEB SCRAPING AREA-------
+        
+        let url = URL(string: "http://www.xavierhs.org/s/81/rd16/start.aspx")!
+        let request = URLRequest(url: url)
+        webView.load(request)
+        webView.navigationDelegate = self
+        dateFinderC.setString()
+        WeekDay.text = dateFinderC.weekDay
+        Month.text = dateFinderC.monthWord
+        Day.text = String(dateFinderC.day) + "," + " "
+
+     }
+    
 
 }
+
 
 

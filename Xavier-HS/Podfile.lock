@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (4.9.0)
+  - Kanna (5.0.0)
+  - SwiftSoup (2.2.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - Kanna
+  - SwiftSoup
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Kanna
+    - SwiftSoup
+
+SPEC CHECKSUMS:
+  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  Kanna: a32875df62975f8f4b871e933b4ea1a5c3b8be0f
+  SwiftSoup: a91d3c96ecb6f8f13005552ef60f9075aae4a7f3
+
+PODFILE CHECKSUM: db34e27efab14b8d5e75db8c960554f0326d3e2d
+
+COCOAPODS: 1.8.1
