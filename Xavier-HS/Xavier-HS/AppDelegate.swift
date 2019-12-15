@@ -15,7 +15,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let launchedBefore = UserDefaults.standard.bool(forKey: "hasLaunched")
+        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        
+        let launchStoryboard = UIStoryboard(name: "Onboarding", bundle: nil)
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        var vc: UIViewController
+        
+        if launchedBefore {
+            vc = mainStoryboard.instantiateViewController(withIdentifier: "mainVC")
+            print("LaunchedBefore")
+        } else {
+            vc = launchStoryboard.instantiateViewController(withIdentifier: "nameStoryboard")
+            print("NewLaunch")
+        }
+        
+        UserDefaults.standard.set(true, forKey: "hasLaunched")
+        
+        self.window?.rootViewController = vc
+        self.window?.makeKeyAndVisible()
+        
+        
         return true
     }
 

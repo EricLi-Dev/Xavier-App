@@ -2,7 +2,7 @@
 //  dateFinder.swift
 //  Xavier-HS
 //
-//  Created by Thomas Ledwith on 12/7/19.
+//  Created by Eric Li on 12/10/19.
 //  Copyright © 2019 Cornette. All rights reserved.
 //
 
@@ -89,4 +89,3 @@ class dateFinder {
      
     }
 }
-
