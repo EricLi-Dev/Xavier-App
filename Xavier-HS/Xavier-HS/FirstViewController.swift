@@ -10,6 +10,7 @@ import UIKit
 import WebKit
 import SwiftSoup
 
+
 class FirstViewController: UIViewController, WKNavigationDelegate {
     
     @IBOutlet weak var WeekDay: UILabel!
@@ -24,78 +25,32 @@ class FirstViewController: UIViewController, WKNavigationDelegate {
     @IBOutlet weak var Event1: UITextView!
     @IBOutlet weak var Event2: UITextView!
     @IBOutlet weak var Event3: UITextView!
+    @IBOutlet weak var barcodeImageTest: UIImageView!
+    ;
+    
+    
+    let name = UserDefaults.standard.object(forKey: "firstName")
+    
     let dateFinderC = dateFinder()
+    let webScraper = webScrape(source: "http://www.xavierhs.org/s/81/rd16/start.aspx")
+    let webScraper2 = webScrape(source: "http://www.xavierhs.org/s/81/rd16/index.aspx?sid=81&gid=1&pgid=1511")
     
-    //TODO: Move Web Scraping to seperate class file.
-    //WEB SCRAPING_______________________________
-    
-    let webView = WKWebView()
-    var htmlStr:String = ""
-    
-    func parseAndExecute() { webView.evaluateJavaScript("document.documentElement.outerHTML.toString()", completionHandler: { (html: Any?, error: Error?) in
-        do {
-            
-            let doc: Document = try SwiftSoup.parse(html as! String)
-            let elements = try doc.getAllElements()
-            var firstEvent = true
-            var eventNum = 0
-            for element in elements {
-                switch try element.className() {
-                case "date-container" :
-                    if firstEvent == true {
-                        print("Date: \(try element.text())")
-                        let parent = element.parent()
-                        let midBox = parent!.parent()
-                        
-                        let title = try midBox!.select("h3.title").text()
-                        print(title)
-                        self.Event1.text = "\(title) - \(try element.text())"
-                        firstEvent = false
-                    } else {
-                        print("Date: \(try element.text())")
-                        let midBox = element.parent()
-                        let title = try midBox!.select("h3.title").text()
-                        print(title)
-                        if eventNum == 0 {
-                            self.Event2.text = "\(title) - \(try element.text())"
-                            eventNum += 1
-                        } else {
-                            self.Event3.text = "\(title) - \(try element.text())"
-                        }
-                    }
-                    
-                default:
-                    let _ = 1
-                }
-            }
-        } catch Exception.Error(let type, let message) {
-            print(type)
-            print("Message: \(message)")
-        } catch {
-            print("error")
-        }
-    })
-    }
-
-    
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!)
-    {
-            self.parseAndExecute()
-    }
-    //---------------------------
+   // let lunchCheck = webScrape(source: "https://xaviernyc.flikisdining.com/menu/xavier-high-school/lunch/2020-01-14")
     override func viewDidLoad() {
         super.viewDidLoad()
-//-------WEB SCRAPING AREA-------
-        
-        let url = URL(string: "http://www.xavierhs.org/s/81/rd16/start.aspx")!
-        let request = URLRequest(url: url)
-        webView.load(request)
-        webView.navigationDelegate = self
+        webScraper.parseAndExecute()
+        webScraper2.parseAndExecuteDay()
+        //lunchCheck.showHTML()
+        let nameCheck = webScrape(source: "http://www.xavierhs.org/s/81/rd16/index.aspx?sid=81&gid=1&pgid=1511", name1: name as? String ?? "")
+        nameCheck.nameCheck()
         dateFinderC.setString()
         WeekDay.text = dateFinderC.weekDay
         Month.text = dateFinderC.monthWord
         Day.text = String(dateFinderC.day) + "," + " "
-
+        Event1.text = webScraper.getOne()
+        Event2.text = webScraper.getTwo()
+        Event3.text = webScraper.getThree()
+       // barcodeImageTest.image = UIImage(barcode: "211720")
      }
     
 

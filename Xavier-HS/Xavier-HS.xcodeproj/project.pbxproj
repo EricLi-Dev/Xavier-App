@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		1341C5C4239BFE6E00744631 /* Pods_Xavier_HS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20BE58202709D9A2D360700 /* Pods_Xavier_HS.framework */; };
 		1341C5C8239C051000744631 /* dateFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1341C5C7239C051000744631 /* dateFinder.swift */; };
+		1366A77923A5EA580010679B /* OnboardingPager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1366A77823A5EA580010679B /* OnboardingPager.swift */; };
+		1366A77B23A5EA5E0010679B /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1366A77A23A5EA5E0010679B /* Onboarding.storyboard */; };
+		13D50B0F23A4589000FCAE6B /* webScrape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D50B0E23A4588F00FCAE6B /* webScrape.swift */; };
+		13D50B1123A5AB2C00FCAE6B /* barcodeScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D50B1023A5AB2C00FCAE6B /* barcodeScanner.swift */; };
 		A7F231F72319C7E5003533AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F231F62319C7E5003533AB /* AppDelegate.swift */; };
 		A7F231F92319C7E5003533AB /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F231F82319C7E5003533AB /* FirstViewController.swift */; };
 		A7F231FB2319C7E5003533AB /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F231FA2319C7E5003533AB /* SecondViewController.swift */; };
@@ -19,6 +23,10 @@
 
 /* Begin PBXFileReference section */
 		1341C5C7239C051000744631 /* dateFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dateFinder.swift; sourceTree = "<group>"; };
+		1366A77823A5EA580010679B /* OnboardingPager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingPager.swift; sourceTree = "<group>"; };
+		1366A77A23A5EA5E0010679B /* Onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		13D50B0E23A4588F00FCAE6B /* webScrape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webScrape.swift; sourceTree = "<group>"; };
+		13D50B1023A5AB2C00FCAE6B /* barcodeScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = barcodeScanner.swift; sourceTree = "<group>"; };
 		96F6195BEBF453796A5DF480 /* Pods-Xavier-HS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xavier-HS.release.xcconfig"; path = "Target Support Files/Pods-Xavier-HS/Pods-Xavier-HS.release.xcconfig"; sourceTree = "<group>"; };
 		A7F231F32319C7E5003533AB /* Xavier-HS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Xavier-HS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7F231F62319C7E5003533AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,8 +87,12 @@
 				A7F231FC2319C7E5003533AB /* Main.storyboard */,
 				A7F231FF2319C7E6003533AB /* Assets.xcassets */,
 				A7F232012319C7E6003533AB /* LaunchScreen.storyboard */,
+				1366A77823A5EA580010679B /* OnboardingPager.swift */,
 				A7F232042319C7E6003533AB /* Info.plist */,
 				1341C5C7239C051000744631 /* dateFinder.swift */,
+				1366A77A23A5EA5E0010679B /* Onboarding.storyboard */,
+				13D50B0E23A4588F00FCAE6B /* webScrape.swift */,
+				13D50B1023A5AB2C00FCAE6B /* barcodeScanner.swift */,
 			);
 			path = "Xavier-HS";
 			sourceTree = "<group>";
@@ -157,6 +169,7 @@
 				A7F232032319C7E6003533AB /* LaunchScreen.storyboard in Resources */,
 				A7F232002319C7E6003533AB /* Assets.xcassets in Resources */,
 				A7F231FE2319C7E5003533AB /* Main.storyboard in Resources */,
+				1366A77B23A5EA5E0010679B /* Onboarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,9 +223,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7F231FB2319C7E5003533AB /* SecondViewController.swift in Sources */,
+				1366A77923A5EA580010679B /* OnboardingPager.swift in Sources */,
 				1341C5C8239C051000744631 /* dateFinder.swift in Sources */,
+				13D50B0F23A4589000FCAE6B /* webScrape.swift in Sources */,
 				A7F231F72319C7E5003533AB /* AppDelegate.swift in Sources */,
 				A7F231F92319C7E5003533AB /* FirstViewController.swift in Sources */,
+				13D50B1123A5AB2C00FCAE6B /* barcodeScanner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
