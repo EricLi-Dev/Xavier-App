@@ -50,6 +50,15 @@
                                     <constraint firstItem="mLh-b0-H27" firstAttribute="centerX" secondItem="oVo-Er-52H" secondAttribute="centerX" id="mvO-f2-fai"/>
                                 </constraints>
                             </view>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Barcode Num" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nGP-oF-yeM">
+                                <rect key="frame" x="116" y="451" width="178" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="barcodeNum:" destination="jii-vW-cHn" eventType="editingDidEnd" id="AW9-TM-dU7"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -60,6 +69,7 @@
                         <viewLayoutGuide key="safeArea" id="RZm-ev-fsg"/>
                     </view>
                     <connections>
+                        <outlet property="barcodeNum" destination="nGP-oF-yeM" id="CXR-ge-rHN"/>
                         <outlet property="firstName" destination="oVo-Er-52H" id="EFx-GJ-dYQ"/>
                     </connections>
                 </viewController>

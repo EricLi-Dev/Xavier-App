@@ -1,24 +1,24 @@
 PODS:
-  - Alamofire (4.9.0)
-  - Kanna (5.0.0)
+  - FeedKit (9.0.0)
+  - RSBarcodes_Swift (5.0.0)
   - SwiftSoup (2.2.1)
 
 DEPENDENCIES:
-  - Alamofire
-  - Kanna
+  - FeedKit (~> 9.0)
+  - RSBarcodes_Swift
   - SwiftSoup
 
 SPEC REPOS:
   trunk:
-    - Alamofire
-    - Kanna
+    - FeedKit
+    - RSBarcodes_Swift
     - SwiftSoup
 
 SPEC CHECKSUMS:
-  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
-  Kanna: a32875df62975f8f4b871e933b4ea1a5c3b8be0f
+  FeedKit: 9ffa2434af293df73ac069129900498b3f89cb2e
+  RSBarcodes_Swift: b6bee284eef3ee27f67fabb0d7f07459ed68a3de
   SwiftSoup: a91d3c96ecb6f8f13005552ef60f9075aae4a7f3
 
-PODFILE CHECKSUM: db34e27efab14b8d5e75db8c960554f0326d3e2d
+PODFILE CHECKSUM: f812727f1e057c560aeb682471ae0dd195cbea81
 
-COCOAPODS: 1.8.1
+COCOAPODS: 1.8.4

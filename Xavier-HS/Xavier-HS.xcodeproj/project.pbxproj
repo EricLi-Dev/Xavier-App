@@ -11,6 +11,7 @@
 		1341C5C8239C051000744631 /* dateFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1341C5C7239C051000744631 /* dateFinder.swift */; };
 		1366A77923A5EA580010679B /* OnboardingPager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1366A77823A5EA580010679B /* OnboardingPager.swift */; };
 		1366A77B23A5EA5E0010679B /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1366A77A23A5EA5E0010679B /* Onboarding.storyboard */; };
+		1366A77D23A72E550010679B /* rssReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1366A77C23A72E550010679B /* rssReader.swift */; };
 		13D50B0F23A4589000FCAE6B /* webScrape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D50B0E23A4588F00FCAE6B /* webScrape.swift */; };
 		13D50B1123A5AB2C00FCAE6B /* barcodeScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D50B1023A5AB2C00FCAE6B /* barcodeScanner.swift */; };
 		A7F231F72319C7E5003533AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F231F62319C7E5003533AB /* AppDelegate.swift */; };
@@ -25,6 +26,7 @@
 		1341C5C7239C051000744631 /* dateFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dateFinder.swift; sourceTree = "<group>"; };
 		1366A77823A5EA580010679B /* OnboardingPager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingPager.swift; sourceTree = "<group>"; };
 		1366A77A23A5EA5E0010679B /* Onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		1366A77C23A72E550010679B /* rssReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rssReader.swift; sourceTree = "<group>"; };
 		13D50B0E23A4588F00FCAE6B /* webScrape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webScrape.swift; sourceTree = "<group>"; };
 		13D50B1023A5AB2C00FCAE6B /* barcodeScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = barcodeScanner.swift; sourceTree = "<group>"; };
 		96F6195BEBF453796A5DF480 /* Pods-Xavier-HS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xavier-HS.release.xcconfig"; path = "Target Support Files/Pods-Xavier-HS/Pods-Xavier-HS.release.xcconfig"; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				1341C5C7239C051000744631 /* dateFinder.swift */,
 				1366A77A23A5EA5E0010679B /* Onboarding.storyboard */,
 				13D50B0E23A4588F00FCAE6B /* webScrape.swift */,
+				1366A77C23A72E550010679B /* rssReader.swift */,
 				13D50B1023A5AB2C00FCAE6B /* barcodeScanner.swift */,
 			);
 			path = "Xavier-HS";
@@ -227,6 +230,7 @@
 				1341C5C8239C051000744631 /* dateFinder.swift in Sources */,
 				13D50B0F23A4589000FCAE6B /* webScrape.swift in Sources */,
 				A7F231F72319C7E5003533AB /* AppDelegate.swift in Sources */,
+				1366A77D23A72E550010679B /* rssReader.swift in Sources */,
 				A7F231F92319C7E5003533AB /* FirstViewController.swift in Sources */,
 				13D50B1123A5AB2C00FCAE6B /* barcodeScanner.swift in Sources */,
 			);

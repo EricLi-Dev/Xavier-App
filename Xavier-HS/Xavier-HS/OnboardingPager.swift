@@ -19,7 +19,11 @@ class OnboardingPager : UIViewController {
     @IBAction func firstName(_ sender: Any) {
         UserDefaults.standard.set(firstName.text, forKey: "firstName")
     }
+    @IBOutlet weak var barcodeNum: UITextField!
     
+    @IBAction func barcodeNum(_ sender: Any) {
+        UserDefaults.standard.set(barcodeNum.text, forKey: "barcode")
+    }
     
     @IBAction func continueButton(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
